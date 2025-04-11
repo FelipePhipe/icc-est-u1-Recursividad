@@ -4,6 +4,13 @@ public class App {
         int n = 5;
         int rresultadoFinal = factorial( n );
         System.out.println("Resultado: " + rresultadoFinal);
+
+        EjerciciosRecursivos e=new EjerciciosRecursivos();
+        int fibo=e.fibonacci(5);
+        System.out.println(fibo);
+        int getpo=e.getPotencia(5, 2);
+        System.out.println(getpo);
+
     }
 
     public static int factorial(int n){
@@ -16,6 +23,5 @@ public class App {
         System.out.println("Calculando factorial de: " + n + " * " + "factorial(" + (n-1) + " -1)");
         return resultadoParcial;
     }
-    EjerciciosRecursivos e=new EjerciciosRecursivos();
-    int fibo=e.fibonacci(5);
+    
 }

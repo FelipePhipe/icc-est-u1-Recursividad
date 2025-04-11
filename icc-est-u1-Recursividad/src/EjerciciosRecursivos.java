@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class EjerciciosRecursivos {
     public int fibonacci(int n) {
         //if (n==0|| n==1){
@@ -24,4 +26,25 @@ public class EjerciciosRecursivos {
         int resultado=n+ resultadoParcial;
         return resultado;
     }
+
+
+
+    public int getPotencia(int base, int exponente){
+    
+        //Scanner leer= new Scanner(System.in);
+        //System.out.println("Ingrese la base: ");
+        //base=leer.nextInt();
+        //System.out.println("Ingrese el exponente: ");
+        //exponente=leer.nextInt();
+
+        System.out.println(base+"^"+ exponente);
+        if(exponente==0){
+            return 1;
+        }
+        int resultadoPotencia=getPotencia(base, exponente-1);
+        int resultadoP= base*resultadoPotencia;
+        
+        return resultadoP;
+    }
+    
 }
