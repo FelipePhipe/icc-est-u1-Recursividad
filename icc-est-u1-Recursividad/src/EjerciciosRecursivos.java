@@ -30,12 +30,6 @@ public class EjerciciosRecursivos {
 
 
     public int getPotencia(int base, int exponente){
-    
-        //Scanner leer= new Scanner(System.in);
-        //System.out.println("Ingrese la base: ");
-        //base=leer.nextInt();
-        //System.out.println("Ingrese el exponente: ");
-        //exponente=leer.nextInt();
 
         System.out.println(base+"^"+ exponente);
         if(exponente==0){
@@ -46,5 +40,21 @@ public class EjerciciosRecursivos {
         
         return resultadoP;
     }
-    
+    public int sumaDigitos(int num){
+        if (num<10){
+            return num;
+        }
+        int UDig= num%10;
+        int oneNum= num/10;
+        return UDig+ sumaDigitos(oneNum);
+
+    }
+
+
+    // public int secuenciaNum(int n){
+    //     if(n==1){
+    //         return 1;
+    //     }
+    //     return secuenciaNum(n)secuenciaNum(n-1);
+    // }
 }
